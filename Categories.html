@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminboard.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+  <!--NavBar-->
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+                <a href="index.html" class="navbar-brand">AdminBoard</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <div class="collapse navbar-collapse my-auto" id="menu">
+                <div class="col">
+                 <ul class="navbar-nav ">
+                     <li class="nav-item active">
+                           <a href="index.html" class="nav-link">Dashboard <span class="sr-only">(current)</span> </a>
+                        </li>
+                        <li class="nav-item">
+                           <a href="Post.html" class="nav-link">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Categories.html" class="nav-link">Categories</a>
+                        </li>
+                        <li class="nav-item mr-auto">
+                            <a href="Utilisateurs.html" class="nav-link">Utilisateurs</a>
+                        </li>
+                        <li class="nav-item">
+                                    <a href="#" class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" 
+                                          aria-haspopup="true" aria-expanded="false" id="bienvenu" data-display="statice">
+                                      <span class="fas fa-user"></span> Bienvenu Rainatou
+                                      </a> 
+                                              <div class="dropdown-menu dropdown-menu-lg-right bg-white shadow-lg"aria-labelledby="bienvenu">
+                                              <a href="Profile.html" class="dropdown-item"> <i class="fas fa-user-circle"></i> Profil</a>
+                                              <a href="Parametres.html" class="dropdown-item"> <i class="fas fa-cog" ></i>  Parametres</a>
+                                              </div>                                               
+                        </li>
+                        <li class="nav-item" >
+                          <a href="logout.html" class="nav-link"><span class="fas fa-user-times"></span> Logout</a>
+                      </li>
+                     </ul> 
+    
+                   </div>
+                  </nav>
+              </div>
+          </div>
+  
+
+
+  
+        <!--Categiries-->
+        <section class="py-2 bg-success">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h1 class="text-light"><i class="fas fa-pencil-alt"></i> Categiries</h1>
+                  </div>
+                </div>
+  
+              </div>
+        </section>
+        <!--search-->
+        <section class="py-3 " style="background-color: rgb(245, 244, 244)">
+            <div class="container ">
+                <div class="row ">
+                  
+                        <form class="form-inline my-2 my-lg-0 ml-auto">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success bg-success text-light my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                    
+                </div>
+            </div>
+        </section>
+        <!--Categories recent-->
+        <section class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <div class="card">
+                    <h5 class="card-header"> Les posts recents</h5>
+                    
+                        <table>
+                            <tr style="background: black; " class="text-light  mt-1 mb-1">
+                              <td>#</td>
+                              <td></td>
+                              <td>Title</td>
+                              <td>Date Posted</td>
+                              <td></td>
+                            </tr>
+                 
+                            <tr class="py-5 toc" style="background-color: rgb(245, 244, 244); ">
+                              <td>1</td>
+                              <td></td>
+                              <td>web Development</td>
+                              <td class="py-3">Octobre 12, 2019</td>
+                             
+                            </tr>
+                           
+                            
+                            <tr>
+                               <td>2</td>
+                              <td></td>
+                              <td>Tech Gadgets</td>
+                              <td class="py-3">Octobre13, 2019</td>
+                             
+                            </tr>
+                 
+                           <tr class="py-5 toc" style="background-color: rgb(245, 244, 244); ">
+                             <td>4</td>
+                             <td></td>
+                             <td>web Development</td>
+                             <td class="py-3" >Octobre 12, 2019</td>
+                            
+                           </tr>
+                 
+                           <tr class="">
+                             <td>6</td>
+                             <td></td>
+                             <td>Tech Gadgets</td>
+                             <td class="py-3">Octobre13, 2019</td>
+                            
+                           </tr>
+                 
+                          </table>
+
+
+                   
+                   <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item " aria-current="page">
+                        <span class="page-link">
+                          2
+                          <span class="sr-only">(current)</span>
+                        </span>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  </div>
+                </div>
+          
+                
+          
+              </div>
+            </div>
+          </section>
+
+
+<!--footers-->
+<section class="p-5 bg-dark text-light text-center">
+  <div class="container">
+      <div class="row">
+           <div class="col">
+              <h5 > Copyright &copy; 2019 adminBoard</h5>
+           </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+</body>
+</html>
